@@ -90,7 +90,7 @@ const statusMetadata = {
   on_duty_not_driving: { label: "On Duty (ND)", code: "ON", color: "var(--primary, #eab308)" },
 }
 
-export default function EldGrid({ logs: initialLogs = defaultDummyLogs, compact = false }: EldGridProps) {
+export default function EldGrid({ logs: initialLogs = defaultDummyLogs }: EldGridProps) {
   const getInitialLogs = (): DailyLogs => {
     try {
       const saved = localStorage.getItem("active_eld_logs")
